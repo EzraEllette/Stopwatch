@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="stopwatch.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Stopwatch</h1>
+  </header>
+
+  <main>
+    <div id="stopwatch">
+
+    </div>
+    <button id="stopwatch-control">Start</button>
+    <button id="reset">Reset</button>
+  </main>
+  <script id="time" type="text/x-handlebars">
+    <h2 id="hours">{{hours}}</h2>
+    :
+    <h2 id="minutes">{{minutes}}</h2>
+    :
+    <h2 id="seconds">{{seconds}}</h2>
+    .
+    <h2 id="centiseconds">{{centiseconds}}</h2>
+  </script>
+</body>
+</html>
